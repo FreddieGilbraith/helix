@@ -4226,3 +4226,18 @@ language-servers = ["sourcepawn-studio"]
 [[grammar]]
 name = "sourcepawn"
 source = { git = "https://github.com/nilshelmig/tree-sitter-sourcepawn", rev = "f2af8d0dc14c6790130cceb2a20027eb41a8297c" }
+
+[[language]]
+name = "ink"
+scope = "source.ink"
+file-types = [ "ink" ]
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
+roots = []
+auto-format=true
+soft-wrap.enable = true
+formatter = { command = "ballpoint" , args = ["--stdin"] }
+
+[[grammar]]
+name = "ink"
+source = { git = "https://github.com/little-bonsai/tree-sitter-ink.git", rev = "f0adebb9247915e37c1b6be133f0381d11e0cb7c" }
